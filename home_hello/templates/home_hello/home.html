@@ -1,0 +1,19 @@
+<title>Тестовое задание</title>
+{% if name == None or msg == None%}
+    <h1 style="text-align: center">Попробуй передать параметры name и message</h1>
+{% else %}
+<h2 style="text-align: center">Hello
+    {% if name == '' %}
+        Rekruto!
+    {% else %}
+        {{ name }}!
+        </h2>
+    {% endif %}
+<h1 style="text-align: center">
+    {% if msg == '' %}
+        Давай дружить!
+    {% else %}
+        {{ msg }}!</h1>
+    {% endif %}
+
+{% endif %}
